@@ -1,0 +1,244 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+          <![endif]-->
+  <script type="text/x-handlebars" data-template-name="application">
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 head-line">
+            <div class="logo-blck">
+              {{#link-to 'index'}}
+              <img src="img/logo.png" alt="logo">
+            {{/link-to}}
+                
+            </div>
+            <div class="btn-bl-h">
+              <button class="sign-in-btn">SIGN IN</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </header>
+    {{outlet}}
+  </script>
+ <script type="text/x-handlebars" data-template-name="index">
+    <div class="block-1">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 img-bl col-md-push-4">
+            <img src="img/mob-im.png" alt="">
+          </div>
+          <div class="col-md-4 col-md-push-4">
+            <div class="app-btn">
+              <div class="store-btn">
+                <a href="">
+                  <img src="img/appst-im.png" alt="">
+                </a>
+              </div>
+              <div class="store-btn">
+                <a href="">
+                  <img src="img/gogp-im.png" alt="">
+                </a>
+              </div>
+            </div>
+            <button class="try-btn">TRY KNOCK FOR FREE</button>
+          </div>
+          <div class="col-md-4 col-md-pull-8">
+            <div class="h3 f-w-t">What people say:</div>
+            
+            <div class="comment-block">
+              <div class="txt-com">
+                It really works. Thank you for the service! And even with languages using the Latin alphabet, there may be minor problems.
+              </div>
+              <div class="autor-com">
+                <div class="h4 f-w-t">John Paley</div>
+                <hr>
+              </div>
+            </div>
+            <div class="comment-block">
+              <div class="txt-com">
+                It really works. Thank you for the service! 
+              </div>
+              <div class="autor-com">
+                <div class="h4 f-w-t">John Paley</div>
+                <hr>
+              </div>
+            </div>
+            <div class="comment-block">
+              <div class="txt-com">
+                It really works. Thank you for the service! And even with languages using the Latin alphabet, there may be minor problems.
+              </div>
+              <div class="autor-com">
+                <div class="h4 f-w-t">John Paley</div>
+                <hr>
+              </div>
+            </div>
+            <div class="com-btns">
+              <div class="butn-f-com active">
+                <hr>
+              </div>
+              <div class="butn-f-com">
+                <hr>
+              </div>
+              <div class="butn-f-com">
+                <hr>
+              </div>
+              <div class="butn-f-com">
+                <hr>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-12 hidden-xs">
+            <div class="down-btn">
+              <a href="">
+                <img src="img/elips.png" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="block-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="h2 cnt-t ">Contact Us</div>
+          </div>
+          <div class="col-md-12 com-bl">
+            <div class="col-md-5 col-md-push-1">
+              <div class="cont-box clearfix">
+                <div class="col-md-12">
+                  <div class="icon-bl">
+                    <a href="mailto:info@knock.com"><img src="img/mail.png" alt=""></a>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="imp-txt">
+                    <a href="mailto:info@knock.com"><span class="slog">Shoot us an Email</span></a>
+                    <div class="big-inf">info@knock.com</div>
+                  </div>
+                  <div class="txt">We're always happy to discuss partnerships or opportunities.</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5 col-md-push-1">
+              <div class="cont-box clearfix">
+                <div class="col-md-12">
+                  <div class="icon-bl">
+                    <a href="tel:+380445370222"><img src="img/tel.png" alt=""></a>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="imp-txt">
+                    <a href="tel:+380445370222"><span class="slog">Give Us A Call</span></a>
+                    <div class="big-inf">+38 044 537 0222</div>
+                  </div>
+                  <div class="txt">If your request is urgent and you need help immediately, connect with us directly here.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-6 soc">
+            <a href="">Addo Labs Inc.</a>
+          </div>
+          <div class="col-xs-6 soc-l">
+            {{#link-to 'privacy'}}
+              Privacy Policy
+            {{/link-to}}
+          </div>
+        </div>
+      </div>
+    </footer>
+ </script>
+<script type="text/x-handlebars" data-template-name="privacy">
+  <div class="text-page">
+    <div class="container">
+      <div class="row">
+        <div class="h2 f-w-t cnt-t prav-zag">Privacy Policy</div>
+        <div class="col-md-12">
+          <div class="all-text">
+            <div class="bl-w-txt">
+              This privacy policy has been compiled to better serve those who are concerned with how their 'Personally Identifiable Information' (PII) is being used online. PII, as described in US privacy law and information security, is information that can be used on its own or with other information to identify, contact, or locate a single person, or to identify an individual in context. Please read our privacy policy carefully to get a clear understanding of how we collect, use, protect or otherwise handle your Personally Identifiable Information in accordance with our website.
+            </div>
+            <div class="bl-w-txt">
+              <div class="zagl">What personal information do we collect from the people that visit our blog, website or app?</div>
+              We do not collect information from visitors of our site. or other details to help you with your experience. <br> When do we collect information? We collect information from you when you register on our site, fill out a form or enter information on our site.
+            </div>
+            <div class="bl-w-txt">
+              <div class="zagl">How do we use your information?</div>
+              We may use the information we collect from you when you register, make a purchase, sign up for our newsletter, respond to a survey or marketing communication, surf the website, or use certain other site features in the following ways: • To personalize your experience and to allow us to deliver the type of content and product offerings in which you are most interested. • To quickly process your transactions. • To follow up with them after correspondence (live chat, email or phone inquiries) <br>How do we protect your information? Our website is scanned on a regular basis for security holes and known vulnerabilities in order to make your visit to our site as safe as possible. We use regular Malware Scanning. Your personal information is contained behind secured networks and is only accessible by a limited number of persons who have special access rights to such systems, and are required to keep the information confidential. In addition, all sensitive/credit information you supply is encrypted via Secure Socket Layer (SSL) technology. We implement a variety of security measures when a user places an order enters, submits, or accesses their information to maintain the safety of your personal information. All transactions are processed through a gateway provider and are not stored or processed on our servers. kept for more than 60 days in order.
+            </div>
+            <div class="bl-w-txt">
+              <div class="zagl">Do we use 'cookies'?</div>
+              Yes. Cookies are small files that a site or its service provider transfers to your computer's hard drive through your Web browser (if you allow) that enables the site's or service provider's systems to recognize your browser and capture and remember certain information. For instance, we use cookies to help us remember and process the items in your shopping cart. They are also used to help us understand your preferences based on previous or current site activity, which enables us to provide you with improved services. We also use cookies to help us compile aggregate data about site traffic and site interaction so that we can offer better site experiences and tools in the future.
+            </div>
+            <div class="bl-w-txt">
+              <div class="zagl">We use cookies to:</div>
+              • Understand and save user's preferences for future visits. • Compile aggregate data about site traffic and site interactions in order to offer better site experiences and tools in the future. We may also use trusted third-party services that track this information on our behalf.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-6 soc">
+          <a href="">Addo Labs Inc.</a>
+        </div>
+        <div class="col-xs-6 soc-l">
+          <a href="">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</script>
+  <script src="js/libs/jquery-1.11.1.js"></script>
+  <script src="js/libs/handlebars-v1.3.0.js"></script>
+  <script src="js/libs/ember-1.8.1.js"></script>
+  <script src="js/libs/ember-data-v1.0.0-beta.11.js"></script>
+  <script src="https://cdn.firebase.com/js/client/2.0.4/firebase.js"></script>
+  <script src="https://cdn.firebase.com/libs/emberfire/1.3.1/emberfire.min.js"></script>
+
+  <script src="js/app.js"></script>
+  <script src="js/router.js"></script>
+
+  <script src="js/routes/lists-route.js"></script>
+
+  <script src="js/models/list.js"></script>
+  <script src="js/models/card.js"></script>
+
+  <!-- <script src="js/controllers/list-controller.js"></script> -->
+  <!-- <script src="js/controllers/lists-controller.js"></script> -->
+  <!-- <script src="js/controllers/card-controller.js"></script> -->
+
+  <!-- <script src="js/views/edit-card-view.js"></script> -->
+</body>
+
+
+</html>
