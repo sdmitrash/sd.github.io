@@ -3,7 +3,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-4 img-bl col-md-push-4">
-				<img src="/assets/img/mob-im.png" alt="">
+				<img src="/assets/img/mob-im-3.png" alt="">
 			</div>
 			<div class="col-md-4 col-md-push-4">
 				<div class="app-btn">
@@ -22,32 +22,78 @@
 			</div>
 			<div class="col-md-4 col-md-pull-8">
 				<div class="h3 f-w-t">What people say:</div>
-				
-				<div class="comment-block">
-					<div class="txt-com">
-						It really works. Thank you for the service! And even with languages using the Latin alphabet, there may be minor problems.
+				<div class="for-com">
+					<div class="comment-block actv" id="1">
+						<div class="txt-com">
+							It really works. Thank you for the service! And even with languages using the Latin alphabet, there may be minor problems.
+						</div>
+						<div class="autor-com">
+							<div class="h4 f-w-t">John Paley</div>
+							<hr>
+						</div>
 					</div>
-					<div class="autor-com">
-						<div class="h4 f-w-t">John Paley</div>
-						<hr>
+					<div class="comment-block actv" id="2">
+						<div class="txt-com">
+							It really works. Thank you for the service! And even with languages using the Latin alphabet, there may be minor problems.
+						</div>
+						<div class="autor-com">
+							<div class="h4 f-w-t">John Paley</div>
+							<hr>
+						</div>
 					</div>
-				</div>
-				<div class="comment-block">
-					<div class="txt-com">
-						It really works. Thank you for the service! 
+					<div class="comment-block actv" id="3">
+						<div class="txt-com">
+							It really works. Thank you for the service! And even with languages using the Latin alphabet, there may be minor problems.
+						</div>
+						<div class="autor-com">
+							<div class="h4 f-w-t">John Paley</div>
+							<hr>
+						</div>
 					</div>
-					<div class="autor-com">
-						<div class="h4 f-w-t">John Paley</div>
-						<hr>
+					<div class="comment-block act-n" id="4">
+						<div class="txt-com">
+							It really works. Thank you for the service! And even with languages using the Latin alphabet, there may be minor problems.
+						</div>
+						<div class="autor-com">
+							<div class="h4 f-w-t">Test</div>
+							<hr>
+						</div>
 					</div>
-				</div>
-				<div class="comment-block">
-					<div class="txt-com">
-						It really works. Thank you for the service! And even with languages using the Latin alphabet, there may be minor problems.
+					<div class="comment-block act-n" id="5">
+						<div class="txt-com">
+							It really works. Thank you for the service! And even with languages using the Latin alphabet, there may be minor problems.
+						</div>
+						<div class="autor-com">
+							<div class="h4 f-w-t">Test</div>
+							<hr>
+						</div>
 					</div>
-					<div class="autor-com">
-						<div class="h4 f-w-t">John Paley</div>
-						<hr>
+					<div class="comment-block act-n" id="6">
+						<div class="txt-com">
+							It really works. Thank you for the service! And even with languages using the Latin alphabet, there may be minor problems.
+						</div>
+						<div class="autor-com">
+							<div class="h4 f-w-t">Test 6</div>
+							<hr>
+						</div>
+					</div>
+					<div class="comment-block act-n" id="7">
+						<div class="txt-com">
+							It really works. Thank you for the service! And even with languages using the Latin alphabet, there may be minor problems.
+						</div>
+						<div class="autor-com">
+							<div class="h4 f-w-t">Test 7</div>
+							<hr>
+						</div>
+					</div>
+					<div class="comment-block act-n" id="8">
+						<div class="txt-com">
+							It really works. Thank you for the service! And even with languages using the Latin alphabet, there may be minor problems.
+						</div>
+						<div class="autor-com">
+							<div class="h4 f-w-t">Test 8</div>
+							<hr>
+						</div>
 					</div>
 				</div>
 				<div class="com-btns">
@@ -67,10 +113,8 @@
 			</div>
 			
 			<div class="col-md-12 hidden-xs">
-				<div class="down-btn">
-					<a href="">
-						<img src="/assets/img/elips.png" alt="">
-					</a>
+				<div class="down-btn" {{action "pressed"}}>
+						<img src="/assets/img/down-arrow.png" alt="">
 				</div>
 			</div>
 		</div>
@@ -133,3 +177,18 @@
 		</div>
 	</div>
 </footer>
+<div id="modal_form">
+	<span id="modal_close" {{action "close"}}>X</span> 
+	<div class="h2 cnt-t">login to knock</div>
+	<input type="text" class="rfield empty_field" placeholder="Your name">
+	<input type="text" class="rfield empty_field" placeholder="Password">
+	<div class="btn-blck-m">
+		<button id="signin-btn" {{action "pressed2"}}>LOGIN</button>
+	</div>
+</div>
+<div id="modal_form-2">
+	<span id="modal_close-2" {{action "close2"}}>X</span> 
+	<div class="h2 cnt-t thnk">Thank you,</div>
+	<div class="txt-mf">we will contact you.</div>
+</div>
+<div class="overlay" {{action "pressedOverlay"}}></div>
