@@ -33,15 +33,23 @@ export default Ember.Component.extend({
     },
     didInsertElement: function() {
         Ember.run.scheduleOnce('afterRender', this, function() {
-        	function smenaCom(fn, ln) {
-				$("div#"+(fn)).fadeOut(800);
-				$("div#"+(ln)).fadeIn(700);
-			}
-			setTimeout(smenaCom,7000, 1, 4);
-			setTimeout(smenaCom,14000, 2, 5);
-			setTimeout(smenaCom,21000, 3, 6);
-			setTimeout(smenaCom,28000, 4, 7);
-			setTimeout(smenaCom,35000, 5, 8);
+        	window.verticalScroller = function($elem) {
+            var top = parseInt($elem.css("top"));
+            var temp = -440;
+            if(top < temp) {
+                top = 600;
+                $elem.css("top", top);
+            }
+            $elem.animate({ top: (parseInt(top) - 150) }, 6000, 'linear', function () {
+              window.verticalScroller($(this))
+            });
+        }
+        var i = 0;
+        $(".for-com >.comment-block").each(function () {
+              $(this).css("top", i);
+              i += 150;
+              window.verticalScroller($(this));
+        });
         });
     }
 });
